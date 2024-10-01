@@ -1,0 +1,35 @@
+/* Mặc định cho màn hình lớn (máy tính) */
+body {
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Thiết lập cho màn hình nhỏ (điện thoại) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex-basis: 48%; /* Chiếm 48% chiều rộng trên màn hình lớn */
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        flex-basis: 100%; /* Chiếm 100% trên màn hình nhỏ */
+    }
+}

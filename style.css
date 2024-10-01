@@ -1257,7 +1257,7 @@ span{
     z-index: 10000000000000000;
 }
 
-/* ----- hiệu ứng di chuyển chuột----- */
+/* ----- hiệu ứng di chuyển tự động----- */
 span::before{
     content: '';
     position: absolute;
@@ -1265,7 +1265,7 @@ span::before{
     height: 100%;
     background: url("—Pngtree—smooth glossy heart vector file_7683158.png");
     background-size: cover;
-    animation: moveheart 1s linear infinite;
+    animation: moveheart 5s linear infinite;/* Animation auto-plays on page load */
 }
 @keyframes moveheart{
     0%{
@@ -1275,4 +1275,4 @@ span::before{
         transform: translate(100px) rotate(360deg);
     }
 }
-/* ------hết hiệu ứng di chuyển chuột----- */                               
+/* ------hết hiệu ứng di chuyển tự động----- */                               
